@@ -1,0 +1,108 @@
+.Cart h1 {
+  text-align: center;
+  font-family: cursive;
+}
+.Subtotal {
+  padding: 5px 0px;
+  font-weight: bold;
+}
+
+.Subtotal,
+.Cart_Item {
+  display: inline-flex;
+  width: 50%;
+  margin: auto;
+  box-shadow: rgb(107, 104, 104) 0px 0px 0px 2px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.Cart_Product {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.Cart_Image {
+  width: 70%;
+  height: 95%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.Cart_Description {
+  width: 30%;
+  font-weight: lighter;
+  padding: 2px 5px;
+  padding: 10px 5px;
+}
+.CountHandler {
+  display: flex;
+  width: 40px;
+  height: 35px;
+  margin-top: auto;
+}
+.CountHandler > input {
+  width: 30px;
+  text-align: center;
+  padding: 2px;
+}
+.cntrlbtn {
+  padding: 10px;
+  text-align: center;
+  background-color: chartreuse;
+  border: none;
+}
+
+.Checkout,
+.Continue {
+  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    chartreuse,
+    gold,
+    white,
+    rgb(165, 79, 165)
+  );
+  display: inline-flex;
+  margin: auto;
+  border: 1px black solid;
+  display: flex;
+  padding: 10px 0px;
+  box-shadow: rgb(160, 154, 154) 0px 0px 0px 2px;
+  justify-content: center;
+  font-weight: bold;
+}
+.Continue:hover,
+.Checkout:hover {
+  background-image: linear-gradient(to right, red, white, chartreuse, gold);
+}
+
+.ShoppingLink {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+.Empty_Alert {
+  display: flex;
+  background-color: rgb(233, 216, 216);
+  font-size: large;
+  font-weight: bold;
+  margin: 30px auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  min-height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  .Subtotal,
+  .Checkout,
+  .Continue,
+  .Cart_Item {
+    width: 80%;
+  }
+}
