@@ -271,5 +271,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  bottom: 0px;
   margin-bottom: 0px;
 }
