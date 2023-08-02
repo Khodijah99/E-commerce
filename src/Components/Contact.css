@@ -1,0 +1,110 @@
+.aboutPage {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.about,
+.contact {
+  padding-top: 15px;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  padding: 20px;
+}
+.aboutImage {
+  width: 90%;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+}
+.about {
+  float: left;
+  margin-left: 100px;
+  background-image: linear-gradient(to right, chartreuse, yellow, white);
+}
+.contact {
+  float: right;
+  margin-right: 94px;
+  background-image: linear-gradient(to right, white, chartreuse, yellow);
+}
+.about p {
+  line-height: 10px;
+  letter-spacing: 2px;
+  font: 1em sans-serif;
+  text-indent: 15px;
+}
+.contact dl {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.contact p {
+  color: black;
+  font-style: oblique;
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+}
+.contact dd {
+  color: black;
+  font-weight: lighter;
+  font-style: oblique;
+  text-indent: 40px;
+}
+.Send {
+  margin-left: 30%;
+}
+textarea {
+  color: black;
+  font-weight: bold;
+  overflow: scroll;
+}
+.Send input {
+  background-color: rgba(255, 217, 0, 0.849);
+  color: rgb(20, 8, 8);
+  padding: 4px;
+  margin-top: 5px;
+  font-weight: bold;
+  width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutPage {
+    flex-direction: column;
+    overflow: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .about,
+  .contact {
+    padding-top: 15px;
+    width: 80%;
+    height: 100%;
+    margin-top: 0px;
+  }
+  .about {
+    margin: auto;
+    background-image: linear-gradient(chartreuse, yellow, rgb(206, 198, 198));
+  }
+  .contact {
+    margin: auto;
+    background-image: linear-gradient(rgb(206, 198, 198), chartreuse, yellow);
+  }
+  .contact h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  textarea {
+    columns: 30;
+    overflow: scroll;
+  }
+}

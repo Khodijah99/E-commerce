@@ -1,0 +1,276 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App_logo {
+  width: 60px;
+  height: 50px;
+  padding: 2px;
+}
+.top-nav {
+  background-color: rgb(233, 238, 243);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.Header {
+  display: flex;
+  padding: 4px;
+  flex-wrap: nowrap;
+  width: 50%;
+}
+.Navigation_bar {
+  display: inline-flex;
+  width: 40%;
+}
+ul.Navigation_bar {
+  list-style: none;
+}
+
+h1 {
+  color: rgb(7, 5, 1);
+  padding: 4px;
+  margin-left: 20px;
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+}
+.Brand,
+.Navigation_bar {
+  display: inline-flex;
+  margin-top: 2px;
+}
+.Header .Footer {
+  position: sticky;
+}
+.Nav {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.733);
+  text-decoration: none;
+  padding: 0.5em;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+}
+.Nav.active {
+  color: rgba(5, 6, 75, 0.952);
+}
+.Navlist:hover {
+  border-top: 4px solid gold;
+  border-bottom: 4px solid chartreuse;
+  border-right: 4px solid gold;
+  border-left: 4px solid chartreuse;
+  padding: 0.3em;
+  margin-left: 0.3em 0;
+  margin-right: 0.2em 0;
+}
+.CartSection {
+  display: inline-flex;
+}
+.CartIcon {
+  margin-left: 60px;
+  color: black;
+}
+.CartIcon:hover {
+  color: chartreuse;
+}
+
+.CartQty {
+  background-color: rebeccapurple;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  width: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Brand_banner {
+  width: 100%;
+  z-index: 1;
+}
+.Banner_tag h2 {
+  color: beige;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 200px;
+}
+
+.Banner_tag {
+  margin: auto;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.New_button {
+  background-color: chartreuse;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  top: 260px;
+  align-self: center;
+}
+.Welcome_section {
+  margin-top: 20px;
+  width: 90%;
+  height: 300px;
+  margin-left: 50px;
+  border-bottom: 3px rgba(153, 156, 150, 0.719) ridge;
+}
+.Welcome {
+  font: 1em sans-serif;
+  font-weight: lighter;
+  padding: 5px;
+  width: 40%;
+  margin: auto;
+  letter-spacing: 2px;
+}
+.Welcome_button {
+  padding: 15px;
+  float: right;
+  margin-right: 200px;
+}
+.New_collection {
+  margin-top: 40px;
+  background-color: rgba(250, 235, 215, 0.719);
+  text-align: center;
+  color: darkgreen;
+}
+.New_collection h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(82, 136, 13);
+  letter-spacing: 2px;
+}
+.Collection {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.Collection_Nav {
+  text-decoration: none;
+  color: black;
+}
+.Collection_Nav:hover {
+  color: whitesmoke;
+}
+.Cards {
+  padding: 5px;
+  margin: 2px 10px;
+  border: ridge darkgreen 4px;
+}
+.Outfit {
+  width: 50%;
+  height: 200px;
+}
+.Label {
+  background-color: rgba(233, 129, 10, 0.527);
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@media screen and (max-width: 768px) {
+  .Navigation_bar {
+    width: 50%;
+  }
+  .Header {
+    width: 50%;
+  }
+  .Nav {
+    padding: 0.2em;
+  }
+  .Navlist:hover {
+    padding: 0.2em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .CartSection {
+    display: inline-flex;
+  }
+  .CartIcon {
+    margin-left: 20px;
+  }
+  .Banner_tag h2 {
+    top: 150px;
+  }
+  .New_button {
+    top: 210px;
+  }
+  .Collection {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .CartIcon {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .top-nav {
+    width: 100%;
+    align-items: center;
+    display: inline-block;
+  }
+
+  .Header {
+    width: 100%;
+  }
+  .Navigation_bar {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgba(153, 216, 197, 0.507);
+  }
+  .Nav {
+    padding: 0.3em;
+    color: black;
+  }
+  .CartIcon {
+    margin-left: 30px;
+  }
+  .Banner_tag h2 {
+    font-size: 2.5rem;
+    top: 150px;
+  }
+  .New_button {
+    top: 200px;
+  }
+  .Collection {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(auto);
+  }
+}
+.Footer {
+  background-color: rgb(233, 238, 243);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0px;
+  margin-bottom: 0px;
+}
