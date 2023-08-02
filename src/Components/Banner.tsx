@@ -1,16 +1,15 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
-import banner from "../assets/banner_2.png";
+import {Link} from "react-router-dom";
 function Banner() {
   return (
     <div className="Banner">
-      <img src={banner} className="Brand_banner" alt="banner" />
+      <img src={'assets/banner_2.png'} className="Brand_banner" alt="banner" />
       <div className="Banner_tag">
         <h2>Bringing Fashion Back !</h2>
         <br />
-        <Link to="#New_collection">
+        <a href="#New_collection">
           <button className="New_button">New Collection</button>{" "}
-        </Link>
+        </a>
       </div>
     </div>
   );

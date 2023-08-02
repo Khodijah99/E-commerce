@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import casual from "../assets/casual.jpg";
 function Collection() {
+  const casual = 'assets/casual.jpg';
   return (
     <div className="New_collection" id="New_collection">
       <h1> New Collection</h1>
 
       <div className="Collection">
         <div className="Cards">
-          <img src={casual} className="Outfit" alt="Outfit" />
+          <img src={'assets/casual.jpg'} className="Outfit" alt="Outfit" />
           <NavLink to="/products" className="Collection_Nav">
             {" "}
             <div className="Label">

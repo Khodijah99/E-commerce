@@ -1,11 +1,10 @@
 import React from "react";
-import aboutImage from "../assets/pink-banner.jpg";
 import "./Contact.css";
 function Contact() {
   return (
     <div className="aboutPage">
       <div className="about">
-        <img src={aboutImage} alt="AboutImage" className="aboutImage" />
+        <img src={'assets/pink-banner.jpg'} alt="AboutImage" className="aboutImage" />
 
         <h2> We are there for you anytime! anyday!</h2>
         <p>

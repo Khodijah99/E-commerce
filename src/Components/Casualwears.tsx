@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { ShopContext } from "../Context/shop-context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-export const Casual = (props) => {
+export const Casual = (props: { data: { id: any; productName: any; productPrice: any; productImage: any; }; }) => {
   const { id, productName, productPrice, productImage } = props.data;
   const { addToCart, cartItems } = useContext(ShopContext);
   const cartItemAmount = cartItems[id];
 
   return (
     <div className="Product_Card">
-      <img src={productImage} alt="ProductImage" className="Product_Image" />
+      <img src={'assets/'+productImage+'.jpg'} alt="ProductImage" className="Product_Image" />
       <br />
       <div className="Product_Description">
         <p>Name: {productName}</p>
